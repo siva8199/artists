@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".profile">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="BIO"
+    android:textColor="@color/royalblue"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardCornerRadius="75dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_cp"
+            android:background="@drawable/ic_baseline_person_24"
+            android:clickable="true"
+            android:scaleType="fitCenter"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NAME"
+        android:id="@+id/et_name_cp"
+        android:layout_margin="4dp"
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:paddingLeft="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PROFESSION"
+        android:id="@+id/et_prof_cp"
+        android:layout_margin="4dp"
+        android:drawableStart="@drawable/ic_baseline_work_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_work_24"
+        android:paddingLeft="4dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="LOCATION"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:id="@+id/et_loc_cp"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:paddingLeft="4dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EMAIL"
+        android:id="@+id/et_email_cp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:layout_margin="4dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:paddingLeft="4dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="GENDER"
+        android:id="@+id/et_gen_cp"
+        android:layout_margin="4dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:paddingLeft="4dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SOCIAL MEDIA LINK"
+        android:id="@+id/et_ph_cp"
+        android:layout_margin="4dp"
+        android:drawableStart="@drawable/ic_baseline_tag_faces_24"
+        android:paddingStart="4dp"
+        android:drawablePadding="7dp"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_baseline_tag_faces_24"
+        android:paddingLeft="4dp" />
+
+    <Button
+        android:id="@+id/btn_cp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@android:color/black"
+        android:text="SAVE"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:backgroundTint="@color/royalblue" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_cp"/>
+
+
+
+</LinearLayout>

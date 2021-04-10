@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppthemeDashboard" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">#6075BC</item>
+        <item name="colorPrimaryDark">@color/royalblue</item>
+        <item name="colorAccent">#6F8ECF</item>
+    </style>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "650962326100",
+    "firebase_url": "https://artist-a76a9-default-rtdb.firebaseio.com",
+    "project_id": "artist-a76a9",
+    "storage_bucket": "artist-a76a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650962326100:android:5a7ea3a1985517943e53c1",
+        "android_client_info": {
+          "package_name": "com.example.artist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650962326100-3m9e229vr09lbu7n6tk8lp9q4gbi282t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVQK3-qli4YFotGbWyLWRyW8e3zlEJMCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650962326100-3m9e229vr09lbu7n6tk8lp9q4gbi282t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
