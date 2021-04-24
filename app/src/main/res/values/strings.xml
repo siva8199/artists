@@ -1,3 +1,124 @@
 <resources>
-    <string name="app_name">artist</string>
+    <string name="app_name" translatable="false">artist</string>
+
+    <string name="photography" translatable="false"><br> \n  PHOTOGRAPHY \n </br>
+        <br> \n   This app provides various kind of photography to you , You can get the deatils of the phography and photographers through this application ,
+        you can hire them or their previous works,price and package will be different based the time and the type of photograpy you choose ,
+              if you cant contact them you can send a mail to us on serveu@gmail.com, we will make sure they gonna call you within
+              24 hours from your mail. \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br> \n Portrait Photography  - PP \n </br>
+        <br> \n Lanscape Photography  - LP \n  </br>
+        <br> \n Natural  Photography  - NP \n </br>
+        <br> \n Wedding Photography   - WP \n </br>
+        <br> \n Outdoor Photography   - OP \n </br>
+        <br> \n Product Photography   - PTP \n  </br>
+        <br> \n Newborn Photography   - NNP \n  </br>
+        <br> \n Aerial Photography    - AP \n </br>
+        <br> \n Photographer  - PY ( they provide all kind of photography ) \n </br> </string>
+
+
+    <string name="video" translatable="false"> <br> \n VIDEOGRAPHY </br>
+           <br> \n You can hire videographers through this application , there are different types of making video you can choose them based on your requirement price
+        and package will be based on it .if you cant contact them you can  send a mail to us on serveu@gmail.com, we will make sure they gonna call you
+               within 24 hours  from your mail . \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br> \n Wedding Videography - WV \n </br>
+        <br> \n Small Scale Videograpy - SSV(birthday party , 25th wedding , home ceremony , showroom / office opening ) \n </br>
+        <br> \n Drone Videography - DV \n </br>
+        <br> \n Flim Videography - FV (short flim , commercial video , product video ) \n </br> </string>
+
+    <string name="sketch" translatable="false"> <br> \n SKETCH DRAWING \n </br>
+                    <br> \n This application provides you different types of sketch drawing to you , which you can make them to sketch your portrait ,
+        your house ,your moments and also for your commercial products,if you cant contact them you can  send a mail to us on serveu@gmail.com,
+                        we will make sure they gonna call you within 24 hours  from your mail .\n </br>
+
+        <br> You can search the service through the keyletters \n </br>
+        <br>\n Line Drawing - LD \n </br>
+        <br>\n Cartton Drawing - CD \n </br>
+        <br> \n Pointillism Drawing - PD \n </br>
+        <br> \n Photorealism Drawing - PHD \n </br>
+        <br> \n Architectural Drawing - AD \n  </br>
+        <br> \n Fashion Drawing - FD \n </br></string>
+
+    <string name="paint" translatable="false"><br> \n PAINT ART \n </br>
+                 <br> \n Paint art is a kind of service we provide thats help you to collects some painting and also you can get yours photgraphs as an
+        paint art in various type paint art based on your wish and also we have artist who can paint for your business oriented painting ,if
+                     you cant contact them you can  send a mail to us on serveu@gmail.com, we will make sure they gonna call you within 24 hours from
+                     your mail . \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br> \n Oil Paint - OPT \n </br>
+        <br> \n Watercolor Paint - WPT \n </br>
+        <br> \n Gouache Paint - GPT \n </br>
+        <br> \n Ink Paint - IPT \n </br>
+    </string>
+
+    <string name="illust" translatable="false"> <br> \n ILLUSTRATOR \n </br>
+                   <br> \n Illustrators are kind of digital art making professional , this application provides various types of illustrations work ,
+        which you can create an logo or any motto for you company or business in an digital and in a create way and its also used to create digital
+        art of your portrait ,yours moments and so on,if you cant contact them you can  send a mail to us on serveu@gmail.com, we will make sure they
+                       gonna call you within 24 hours from your mail. \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br> \n Comic Book Illustrator - CBI \n </br>
+        <br> \n Human  Illustrator - HI \n </br>
+        <br> \n Medical Illustrator - MI \n </br>
+        <br> \n Fashion Illustrator - FI \n </br>
+        <br> \n Fine Art Illustrator - FAI \n</br></string>
+
+    <string name="graphic" > <br> \n GRAPHIC DESIGN \n </br>
+
+           <br> \n   Graphic design is an creative professional where you can hire people for designing your website , product , branding and many other works ,
+        this is a kind of a profession which makes your business or product world wide, if you cant  contact them you can  send a mail to us on
+               serveu@gmail.com, we will make sure they gonna call you within 24 hours from your mail. \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+        <br> \n Product Design - PGD  \n </br>
+        <br> \n Webstite Design - WGD \n </br>
+        <br> \n Brading Design - BGD \n </br>
+        <br> \n Environment Desgin - EGD \n </br></string>
+
+    <string name="animator" > <br> \n ANIMATORS \n </br>
+                 <br> \n Animators create animation and visual effects for everything from films and video games to television, mobile devices and other forms
+        of media using software programs, there is an wide market for an this kind of an animation,and this application have wide variety of programs
+        and the source person if you cant  contact them you can  send a mail to us on serveu@gmail.com ,we will make sure they gonna call you
+                     within 24 hours from your mail . \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br> \n 3D Modeler - DA \n </br>
+        <br> \n Art Director - ADA  \n </br>
+        <br> \n Slow Motion Animators - SAM \n </br>
+        <br> \n Character Animators - CA \n </br>
+        <br> \n Concept Animators - COA  \n </br>
+
+    </string>
+
+    <string name="interior" translatable="false"> <br> \n INTERIOR DESIGN \n </br>
+                    <br> \n  ServeU application provides you various variety of interior designer , they help you to design your house , office in a very creative
+        way and we have designers from all over chennai , if you cant  contact them you can  send a mail to us on serveu@gmail.com, we will make sure
+                       they gonna call you within 24 hours from your mail . \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+
+        <br>\n Spacial Designers - SP \n </br>
+        <br>\n Exhibition Designers - ED \n </br>
+        <br> \n Production Designers - PD \n </br></string>
+
+    <string name="event" translatable="false"> <br> \n Event Planners \n </br>
+           <br> \n We provide many event plan companies that you serve you best at the correct expenses , if you cant  contact them you can  send a mail to us on
+              serveu@gmail.com, we will make sure they gonna call you within 24 hours from your mail . \n </br>
+
+        <br> \n You can search the service through the keyletters \n </br>
+        <br>Event Planners - EP \n </br>
+
+    </string>
+    <string name="animators">ANIMATORS</string>
 </resources>

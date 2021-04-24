@@ -1,9 +1,5 @@
 package com.example.artist;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +11,18 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import static com.example.artist.R.layout.activity_login;
 
 public class Login extends AppCompatActivity {
 
@@ -33,7 +35,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(activity_login);
 
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.Password);
@@ -101,7 +103,7 @@ public class Login extends AppCompatActivity {
 
                 EditText resetMail = new EditText(v.getContext());
                 AlertDialog.Builder passwordResetDialog = new AlertDialog.Builder(v.getContext());
-                passwordResetDialog.setTitle("REST PASSWORD?");
+                passwordResetDialog.setTitle("RESET PASSWORD?");
                 passwordResetDialog.setMessage("ENTER YOUR EMAIL TO RECEIVED RESET LINK");
                 passwordResetDialog.setView(resetMail);
 

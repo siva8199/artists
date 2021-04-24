@@ -1,41 +1,44 @@
  package com.example.artist;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+ import android.content.ContentResolver;
+ import android.content.Intent;
+ import android.net.Uri;
+ import android.os.Bundle;
+ import android.text.TextUtils;
+ import android.util.Log;
+ import android.view.LayoutInflater;
+ import android.view.View;
+ import android.webkit.MimeTypeMap;
+ import android.widget.Button;
+ import android.widget.EditText;
+ import android.widget.ImageView;
+ import android.widget.ProgressBar;
+ import android.widget.TextView;
+ import android.widget.Toast;
 
-import android.content.ContentResolver;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Handler;
-import android.text.TextUtils;
-import android.view.View;
-import android.webkit.MimeTypeMap;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.ProgressBar;
-import android.widget.Toast;
+ import androidx.annotation.NonNull;
+ import androidx.annotation.Nullable;
+ import androidx.appcompat.app.AlertDialog;
+ import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.squareup.picasso.Picasso;
+ import com.google.android.gms.tasks.Continuation;
+ import com.google.android.gms.tasks.OnCompleteListener;
+ import com.google.android.gms.tasks.OnFailureListener;
+ import com.google.android.gms.tasks.OnSuccessListener;
+ import com.google.android.gms.tasks.Task;
+ import com.google.firebase.auth.FirebaseAuth;
+ import com.google.firebase.auth.FirebaseUser;
+ import com.google.firebase.database.DatabaseReference;
+ import com.google.firebase.database.FirebaseDatabase;
+ import com.google.firebase.firestore.DocumentReference;
+ import com.google.firebase.firestore.FirebaseFirestore;
+ import com.google.firebase.storage.FirebaseStorage;
+ import com.google.firebase.storage.StorageReference;
+ import com.google.firebase.storage.UploadTask;
+ import com.squareup.picasso.Picasso;
 
-import java.util.HashMap;
-import java.util.Map;
+ import java.util.HashMap;
+ import java.util.Map;
 
 
 
@@ -43,6 +46,7 @@ import java.util.Map;
 
     EditText etname,etprofession,etlocation,etemail,etgender,etsocial;
     Button button ;
+    TextView diabuttom;
     ImageView imageview;
     ProgressBar progressBar;
     Uri imageUri;
@@ -56,11 +60,13 @@ import java.util.Map;
     AllUserMmber memeber;
     String currentUserID;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        diabuttom = findViewById(R.id.diabtn);
         memeber = new AllUserMmber();
         imageview = findViewById(R.id.iv_cp);
         etname = findViewById(R.id.et_name_cp);
@@ -95,7 +101,41 @@ import java.util.Map;
             startActivityForResult(intent,PICK_IMAGE);
          }
       });
+
+      diabuttom.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+                    showDialog();
+          }
+
+
+      });
     }
+
+     private void showDialog() {
+
+         LayoutInflater inflater = LayoutInflater.from(this);
+         View view = inflater.inflate(R.layout.infolay,null);
+
+         Button accebtn = view.findViewById(R.id.okbtn);
+
+         accebtn.setOnClickListener(new View.OnClickListener() {
+             private String TAG;
+
+             @Override
+             public void onClick(View v) {
+                 Log.e(TAG, "onClick: ok button");
+             }
+         });
+
+
+         AlertDialog alertDialog  = new AlertDialog.Builder(this)
+                 .setView(view)
+                 .create();
+
+         alertDialog.show();
+
+     }
 
      @Override
      protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -116,6 +156,7 @@ import java.util.Map;
 
 
      }
+
 
      private String getFileExt(Uri uri){
          ContentResolver contentResolver = getContentResolver();
@@ -163,6 +204,7 @@ import java.util.Map;
                             profile.put("Email",email);
                             profile.put("gender",gende);
                             profile.put("Social",sco);
+                            profile.put("uid",currentUserID);
                             profile.put("url",downloadUri.toString());
                             profile.put("privacy","public");
 
@@ -177,22 +219,26 @@ import java.util.Map;
 
                             databaseReference.child(currentUserID).setValue(memeber);
 
-                            documentReference.set(profile)
-                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            db.collection("users")
+                                    .add(profile)
+                                    .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                         @Override
-                                        public void onSuccess(Void aVoid) {
-                                          progressBar.setVisibility(View.INVISIBLE);
-                                            Toast.makeText(profile.this, "PROFILE CREATED ", Toast.LENGTH_SHORT).show();
-                                            Handler handler = new Handler();
-                                            handler.postDelayed(new Runnable() {
-                                                @Override
-                                                public void run() {
-                                                    Intent intent = new Intent(profile.this,insertprofile.class);
-                                                    startActivity(intent);
-                                                }
-                                            },2000);
+                                        public void onSuccess(DocumentReference documentReference) {
+                                            progressBar.setVisibility(View.VISIBLE);
+                                            Toast.makeText(profile.this, "Profile Created", Toast.LENGTH_SHORT).show();
+
+                                        }
+                                    })
+
+
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            progressBar.setVisibility(View.INVISIBLE);
+                                            Toast.makeText(profile.this, "Error ", Toast.LENGTH_SHORT).show();
                                         }
                                     });
+
 
                         }
                     }
@@ -203,5 +249,6 @@ import java.util.Map;
                 Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
             }
 
-    }
+
+     }
  }

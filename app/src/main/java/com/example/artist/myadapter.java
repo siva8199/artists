@@ -62,6 +62,7 @@ public class myadapter extends FirebaseRecyclerAdapter<AllUserMmber , myadapter.
             gender.setEnabled(false);
             soc = (TextView)itemView.findViewById(R.id.et_ph_cp);
             soc.setEnabled(false);
+
             btnq = (Button)itemView.findViewById(R.id.btn_cp);
             btnq.setVisibility(View.INVISIBLE);
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.artist">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Artist">
-        <activity android:name=".photography"></activity>
+        <activity android:name=".eventplanner"></activity>
+        <activity android:name=".interior" />
+        <activity android:name=".ani" />
+        <activity android:name=".graphicsdesign" />
+        <activity android:name=".illustrator" />
+        <activity android:name=".paintcon" />
+        <activity android:name=".sketcher" />
+        <activity android:name=".videography" />
+        <activity android:name=".photocontent" />
+        <activity android:name=".photography" />
         <activity android:name=".insertprofile" />
         <activity
             android:name=".client"
@@ -24,9 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"/>
-        <activity android:name=".Register"/>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

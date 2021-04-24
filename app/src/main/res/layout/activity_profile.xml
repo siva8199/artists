@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+
     tools:context=".profile">
 <TextView
     android:layout_width="match_parent"
@@ -17,12 +18,16 @@
     android:gravity="center_horizontal"
     android:layout_margin="10dp"/>
 
+
+
     <androidx.cardview.widget.CardView
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:cardPreventCornerOverlap="false"
         app:cardCornerRadius="75dp"
         android:layout_marginBottom="30dp">
+
+
 
         <ImageView
             android:layout_width="match_parent"
@@ -32,7 +37,21 @@
             android:clickable="true"
             android:scaleType="fitCenter"/>
 
+
+
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/diabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Look at this."
+        android:layout_marginLeft="120dp"
+        android:clickable="true"
+        android:textAllCaps="true"
+        android:textSize="10dp"
+        android:textColor="@color/royalblue"/>
+
 
     <EditText
         android:layout_width="match_parent"
@@ -98,6 +117,7 @@
         android:textColor="@android:color/black"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:paddingLeft="4dp" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

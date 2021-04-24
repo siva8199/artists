@@ -4,6 +4,9 @@
     <style name="AppthemeDashboard" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">#6075BC</item>
         <item name="colorPrimaryDark">@color/royalblue</item>
-        <item name="colorAccent">#6F8ECF</item>
+        <item name="colorAccent">#1C2E67</item>
+
     </style>
+    
+
 </resources>

@@ -11,6 +11,7 @@
 
 <RelativeLayout
     android:layout_weight="2"
+    android:background="@drawable/vio"
     android:layout_width="match_parent"
     android:layout_height="0dp">
     <LinearLayout
@@ -19,30 +20,29 @@
         android:layout_centerInParent="true"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:src="@drawable/vio"
-            android:layout_width="88dp"
-            android:layout_gravity="center"
-            android:layout_height="80dp"/>
         <TextView
             android:layout_width="wrap_content"
-            android:text="SERVICES OFFERED"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:textSize="20sp"
-            android:layout_height="wrap_content"/>
+
+            android:text="SERVICES OFFERED"
+            android:textColor="#212E55"
+            android:textSize="30sp" />
 
 
     </LinearLayout>
 
 </RelativeLayout>
 
+
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:columnCount="2"
-        android:rowCount="2"
+        android:columnCount="3"
+        android:rowCount="8"
         android:padding="15dp"
-        android:background="@drawable/bg"
+        android:background="@color/royalblue"
         android:layout_weight="3">
 
         <androidx.cardview.widget.CardView
@@ -56,25 +56,27 @@
             android:layout_width="0dp">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:weightSum="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
 
-               <ImageView
-                   android:layout_weight="2"
-                   android:src="@drawable/ic_baseline_tag_faces_24"
-                   android:layout_width="50dp"
-                   android:layout_gravity="center"
-                   android:layout_margin="15dp"
-                   android:layout_height="50dp"/>
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/vio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
                     android:text="    PHOTOGRAPHY"
-                    android:layout_marginLeft="15dp" />
+                    android:textSize="10dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -97,7 +99,7 @@
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_work_24"
+                    android:src="@drawable/vio"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -106,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
+                    android:textSize="10dp"
                     android:text="    VIDEOGRAPHY"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
@@ -114,6 +116,43 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/sketch"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F7FFFFFF"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/vio" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="  SKETCH DRAWING"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/paint"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
@@ -130,7 +169,7 @@
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_tag_faces_24"
+                    android:src="@drawable/vio"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -139,14 +178,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
-                    android:text="    PHOTOGRAPHY"
+                    android:textSize="10dp"
+                    android:text="         PAINT ART"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/illustrator"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
@@ -163,7 +203,7 @@
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_tag_faces_24"
+                    android:src="@drawable/vio"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -172,14 +212,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
-                    android:text="    PHOTOGRAPHY"
+                    android:textSize="10dp"
+                    android:text="    ILLUSTRATORS"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/graphic"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
@@ -196,7 +237,7 @@
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_tag_faces_24"
+                    android:src="@drawable/vio"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -205,14 +246,50 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
-                    android:text="    PHOTOGRAPHY"
+                    android:textSize="10dp"
+                    android:text=" GRAPHIC DESIGN"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/animator"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/vio"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textSize="10dp"
+                    android:text="     ANIMATORS"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/interior"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             app:cardCornerRadius="15dp"
@@ -229,7 +306,7 @@
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/ic_baseline_tag_faces_24"
+                    android:src="@drawable/vio"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -238,12 +315,62 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="16dp"
-                    android:text="    PHOTOGRAPHY"
+                    android:textSize="10dp"
+                    android:text="INTERIOR DESIGN"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/event"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:layout_height="0dp"
+            android:layout_width="0dp">
+
+            <LinearLayout
+                
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/vio"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textSize="10dp"
+                    android:text="  EVENT PLANNER"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
     </GridLayout>
+
+    <Button
+        android:id="@+id/btn_sa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C4C7CF"
+        android:text="SEARCH ARTISTS" />
+
+    <Button
+        android:id="@+id/btnlo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D2A7AAAE"
+        android:text="LOGOUT" />
 </LinearLayout>

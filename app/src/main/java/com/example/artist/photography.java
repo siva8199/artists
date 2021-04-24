@@ -1,13 +1,13 @@
 package com.example.artist;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.SearchView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
@@ -29,6 +29,8 @@ public class photography extends AppCompatActivity {
                 new FirebaseRecyclerOptions.Builder<AllUserMmber>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("ALL Users"), AllUserMmber.class)
                         .build();
+
+
 
         adapter = new myadapter(options);
         recview.setAdapter(adapter);
@@ -77,11 +79,6 @@ public class photography extends AppCompatActivity {
                 new FirebaseRecyclerOptions.Builder<AllUserMmber>()
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("ALL Users").orderByChild("prof").startAt(s).endAt(s+"\uf8ff"), AllUserMmber.class)
                         .build();
-
-        new FirebaseRecyclerOptions.Builder<AllUserMmber>()
-                .setQuery(FirebaseDatabase.getInstance().getReference().child("ALL Users").orderByChild("loca").startAt(s).endAt(s+"\uf8ff"), AllUserMmber.class)
-                .build();
-
 
         adapter = new myadapter(options);
         adapter.startListening();
