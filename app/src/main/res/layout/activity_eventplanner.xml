@@ -2,25 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/royalblue"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:weightSum="5"
     android:layout_height="match_parent"
     tools:context=".eventplanner">
 
     <ImageView
-        android:src="@drawable/vio"
+        android:src="@drawable/event"
         android:layout_width="88dp"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:layout_height="80dp"/>
     <TextView
         android:layout_width="wrap_content"
-        android:text="     EVENT PLANNER"
+        android:fontFamily="@font/suits"
+        android:text="EVENT PLANNER"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:layout_marginLeft="115dp"
+        android:layout_marginLeft="99dp"
         android:layout_height="wrap_content"/>
 
 
@@ -36,7 +37,9 @@
             android:layout_height="match_parent">
             <TextView
                 android:layout_width="match_parent"
+                android:justificationMode="inter_word"
                 android:layout_height="match_parent"
+                android:fontFamily="@font/font2"
                 android:layout_marginTop="25dp"
                 android:text="@string/event"
                 android:layout_marginLeft="20dp"

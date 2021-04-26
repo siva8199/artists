@@ -3,25 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/royalblue"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:weightSum="5"
     android:layout_height="match_parent"
     tools:context=".paintcon">
 
     <ImageView
-        android:src="@drawable/vio"
+        android:src="@drawable/pain"
         android:layout_width="88dp"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:layout_height="80dp"/>
     <TextView
         android:layout_width="wrap_content"
-        android:text="        PAINTERS"
+        android:fontFamily="@font/suits"
+        android:text="PAINTERS"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:layout_marginLeft="115dp"
+        android:layout_marginLeft="130dp"
         android:layout_height="wrap_content"/>
 
 
@@ -39,6 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="25dp"
+                android:fontFamily="@font/font2"
+                android:justificationMode="inter_word"
                 android:text="@string/paint"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"/>

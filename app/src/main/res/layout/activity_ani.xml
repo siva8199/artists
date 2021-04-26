@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/royalblue"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:weightSum="5"
     android:layout_height="match_parent"
     tools:context=".ani">
 
     <ImageView
-        android:src="@drawable/vio"
+        android:src="@drawable/ani"
         android:layout_width="88dp"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
@@ -17,6 +17,7 @@
         android:contentDescription="TODO" />
     <TextView
         android:layout_width="wrap_content"
+        android:fontFamily="@font/suits"
         android:text="@string/animators"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
@@ -40,6 +41,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/font2"
+                android:justificationMode="inter_word"
                 android:layout_marginTop="25dp"
                 android:text="@string/animator"
                 android:layout_marginLeft="20dp"

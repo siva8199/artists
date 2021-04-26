@@ -3,24 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/royalblue"
+    android:background="@drawable/gradient"
     android:orientation="vertical"
     android:weightSum="5"
     android:layout_height="match_parent"
     tools:context=".photocontent">
 
     <ImageView
-        android:src="@drawable/vio"
+        android:src="@drawable/ic_baseline_camera_24"
         android:layout_width="88dp"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
         android:layout_height="80dp"/>
     <TextView
         android:layout_width="wrap_content"
-        android:text="     PHOTOGRAPHY"
+        android:fontFamily="@font/suits"
+        android:text="  PHOTOGRAPHY"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="15dp"
         android:layout_marginLeft="115dp"
         android:layout_height="wrap_content"/>
 
@@ -38,7 +39,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/font2"
             android:layout_marginTop="25dp"
+            android:justificationMode="inter_word"
             android:text="@string/photography"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"/>

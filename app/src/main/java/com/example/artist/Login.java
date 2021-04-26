@@ -22,8 +22,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import static com.example.artist.R.layout.activity_login;
-
 public class Login extends AppCompatActivity {
 
     EditText mEmail,mPassword;
@@ -35,7 +33,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_login);
+        setContentView(R.layout.activity_login);
 
         mEmail = findViewById(R.id.Email);
         mPassword = findViewById(R.id.Password);

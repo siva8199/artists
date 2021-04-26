@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/royalblue"
+
     android:orientation="vertical"
     android:weightSum="5"
     android:layout_height="match_parent"
@@ -11,7 +11,7 @@
 
 <RelativeLayout
     android:layout_weight="2"
-    android:background="@drawable/vio"
+    android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="0dp">
     <LinearLayout
@@ -24,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-
+            android:fontFamily="@font/suits"
             android:text="SERVICES OFFERED"
-            android:textColor="#212E55"
-            android:textSize="30sp" />
+            android:textColor="@color/white"
+            android:textSize="25dp" />
 
 
     </LinearLayout>
@@ -42,7 +42,7 @@
         android:columnCount="3"
         android:rowCount="8"
         android:padding="15dp"
-        android:background="@color/royalblue"
+        android:background="@color/white"
         android:layout_weight="3">
 
         <androidx.cardview.widget.CardView
@@ -57,8 +57,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
+                android:layout_height="match_parent"
+                android:background="@color/lorange"
                 android:orientation="vertical"
                 android:weightSum="3">
 
@@ -68,15 +68,16 @@
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
                     android:layout_weight="2"
-                    android:src="@drawable/vio" />
+                    android:src="@drawable/ic_baseline_camera_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:text="    PHOTOGRAPHY"
-                    android:textSize="10dp" />
+                    android:fontFamily="@font/suits"
+                    android:text="PHOTOGRAPHY"
+                    android:textSize="8dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -92,25 +93,28 @@
             android:layout_width="0dp">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:weightSum="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:background="@color/lorange"
+                android:orientation="vertical"
+                android:weightSum="3">
 
                 <ImageView
-                    android:layout_weight="2"
-                    android:src="@drawable/vio"
                     android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
-                    android:layout_height="50dp"/>
+                    android:layout_weight="2"
+                    android:src="@drawable/vi" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="10dp"
-                    android:text="    VIDEOGRAPHY"
-                    android:layout_marginLeft="15dp" />
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/suits"
+                    android:text="VIDEOGRAPHY"
+                    android:textSize="8dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -128,7 +132,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#F7FFFFFF"
+                android:background="@color/lorange"
                 android:orientation="vertical"
                 android:weightSum="3">
 
@@ -138,14 +142,15 @@
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
                     android:layout_weight="2"
-                    android:src="@drawable/vio" />
+                    android:src="@drawable/sket" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginLeft="15dp"
-                    android:text="  SKETCH DRAWING"
+                    android:fontFamily="@font/suits"
+                    android:text="   SKETCH  DRAWING"
                     android:textSize="10dp" />
             </LinearLayout>
 
@@ -162,25 +167,28 @@
             android:layout_width="0dp">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:weightSum="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:background="@color/lorange"
+                android:orientation="vertical"
+                android:weightSum="3">
 
                 <ImageView
-                    android:layout_weight="2"
-                    android:src="@drawable/vio"
                     android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
-                    android:layout_height="50dp"/>
+                    android:layout_weight="2"
+                    android:src="@drawable/pain" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="10dp"
-                    android:text="         PAINT ART"
-                    android:layout_marginLeft="15dp" />
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/suits"
+                    android:text="   PAINT ART"
+                    android:textSize="10dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -196,25 +204,28 @@
             android:layout_width="0dp">
 
             <LinearLayout
-                android:orientation="vertical"
-                android:weightSum="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:background="@color/lorange"
+                android:orientation="vertical"
+                android:weightSum="3">
 
                 <ImageView
-                    android:layout_weight="2"
-                    android:src="@drawable/vio"
                     android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
-                    android:layout_height="50dp"/>
+                    android:layout_weight="2"
+                    android:src="@drawable/illustrw" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:textSize="10dp"
-                    android:text="    ILLUSTRATORS"
-                    android:layout_marginLeft="15dp" />
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/suits"
+                    android:text="ILLUSTRATOR"
+                    android:textSize="8dp" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -232,12 +243,13 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:weightSum="3"
+                android:background="@color/lorange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/vio"
+                    android:src="@drawable/illus"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -247,7 +259,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:textSize="10dp"
-                    android:text=" GRAPHIC DESIGN"
+                    android:text="GRAPHIC DESIGN"
+                    android:fontFamily="@font/suits"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
@@ -267,12 +280,13 @@
 
                 android:orientation="vertical"
                 android:weightSum="3"
+                android:background="@color/lorange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/vio"
+                    android:src="@drawable/ani"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -282,7 +296,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:textSize="10dp"
-                    android:text="     ANIMATORS"
+                    android:text="ANIMATORS"
+                    android:fontFamily="@font/suits"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
@@ -301,12 +316,13 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:weightSum="3"
+                android:background="@color/lorange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/vio"
+                    android:src="@drawable/h4"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -317,6 +333,7 @@
                     android:layout_marginStart="15dp"
                     android:textSize="10dp"
                     android:text="INTERIOR DESIGN"
+                    android:fontFamily="@font/suits"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
@@ -336,12 +353,13 @@
                 
                 android:orientation="vertical"
                 android:weightSum="3"
+                android:background="@color/lorange"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_weight="2"
-                    android:src="@drawable/vio"
+                    android:src="@drawable/event"
                     android:layout_width="50dp"
                     android:layout_gravity="center"
                     android:layout_margin="15dp"
@@ -351,7 +369,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:textSize="10dp"
-                    android:text="  EVENT PLANNER"
+                    android:text="EVENT PLANNER"
+                    android:fontFamily="@font/suits"
                     android:layout_marginLeft="15dp" />
             </LinearLayout>
 
@@ -364,13 +383,13 @@
         android:id="@+id/btn_sa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#C4C7CF"
+        android:background="#CEF3B686"
         android:text="SEARCH ARTISTS" />
 
     <Button
         android:id="@+id/btnlo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#D2A7AAAE"
+        android:background="#C4918C8C"
         android:text="LOGOUT" />
 </LinearLayout>
