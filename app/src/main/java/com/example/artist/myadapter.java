@@ -44,7 +44,7 @@ public class myadapter extends FirebaseRecyclerAdapter<AllUserMmber , myadapter.
 
     class myviewholder extends RecyclerView.ViewHolder
     {
-        TextView name,email,profession,location,gender,soc;
+        TextView name,email,profession,location,gender,soc,option;
         Button btnq;
         ImageView image;
         public myviewholder(@NonNull View itemView) {
@@ -62,6 +62,9 @@ public class myadapter extends FirebaseRecyclerAdapter<AllUserMmber , myadapter.
             gender.setEnabled(false);
             soc = (TextView)itemView.findViewById(R.id.et_ph_cp);
             soc.setEnabled(false);
+            option =(TextView)itemView.findViewById(R.id.diabtn);
+            option.setVisibility(View.INVISIBLE);
+
 
             btnq = (Button)itemView.findViewById(R.id.btn_cp);
             btnq.setVisibility(View.INVISIBLE);
