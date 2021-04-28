@@ -235,7 +235,7 @@
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
                                             progressBar.setVisibility(View.INVISIBLE);
-                                            Toast.makeText(profile.this, "Error ", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(profile.this, "Profile Created", Toast.LENGTH_SHORT).show();
                                         }
                                     });
 
