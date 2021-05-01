@@ -16,7 +16,7 @@
         android:layout_height="80dp"/>
     <TextView
         android:layout_width="wrap_content"
-        android:fontFamily="@font/suits"
+        android:fontFamily="@font/joy"
         android:text="EVENT PLANNER"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"

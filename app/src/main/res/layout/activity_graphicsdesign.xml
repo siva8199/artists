@@ -38,7 +38,7 @@
             android:layout_height="match_parent">
             <TextView
                 android:layout_width="match_parent"
-                android:fontFamily="@font/font2"
+                android:fontFamily="@font/joy"
                 android:justificationMode="inter_word"
                 android:layout_height="match_parent"
                 android:layout_marginTop="25dp"

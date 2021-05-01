@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="25dp"
-                android:fontFamily="@font/font2"
+                android:fontFamily="@font/joy"
                 android:justificationMode="inter_word"
                 android:text="@string/paint"
                 android:layout_marginLeft="20dp"
